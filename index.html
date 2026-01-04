@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Document</title>
+        <title>Odin Project Calculator</title>
 
         <link rel="stylesheet" href="styles.css">
     </head>
@@ -20,29 +20,37 @@
                     </div>
                     <div id="solar-panel"></div>
                 </div>
-                <div id="display">12 characters</div>
+                <div id="display-wrapper">
+                    <div id="display">
+                        <p id="preview"></p>
+                        <p id="current-input"></p>
+                    </div>
+                </div>
                 <div id="button-container">
-                    <button class="button row-1 gray-btn" id="1">1</button>
-                    <button class="button row-1 gray-btn" id="2">2</button>
-                    <button class="button row-1 gray-btn" id="3">3</button>
-                    <button class="button row-2 gray-btn" id="4">4</button>
-                    <button class="button row-2 gray-btn" id="5">5</button>
-                    <button class="button row-2 gray-btn" id="6">6</button>
-                    <button class="button row-3 gray-btn" id="7">7</button>
-                    <button class="button row-3 gray-btn" id="8">8</button>
-                    <button class="button row-3 gray-btn" id="9">9</button>
-                    <button class="button row-4 gray-btn" id="decimal">.</button>
-                    <button class="button row-4 gray-btn" id="0">0</button>
+                    <button class="button row-1 gray-btn numerals" id="1">1</button>
+                    <button class="button row-1 gray-btn numerals" id="2">2</button>
+                    <button class="button row-1 gray-btn numerals" id="3">3</button>
+                    <button class="button row-2 gray-btn numerals" id="4">4</button>
+                    <button class="button row-2 gray-btn numerals" id="5">5</button>
+                    <button class="button row-2 gray-btn numerals" id="6">6</button>
+                    <button class="button row-3 gray-btn numerals" id="7">7</button>
+                    <button class="button row-3 gray-btn numerals" id="8">8</button>
+                    <button class="button row-3 gray-btn numerals" id="9">9</button>
+                    <button class="button row-4 gray-btn numerals" id="decimal">.</button>
+                    <button class="button row-4 gray-btn numerals" id="0">0</button>
                     <button class="button row-4 gray-btn" id="previous-answer">Ans</button>
                     <button class="button row-1 green-btn" id="clear">C</button>
                     <button class="button row-1 green-btn" id="clear-all">AC</button>
-                    <button class="button row-3 gray-btn" id="addition">+</button>
-                    <button class="button row-3 gray-btn" id="subtraction">-</button>
-                    <button class="button row-2 gray-btn" id="multiplication">×</button>
-                    <button class="button row-2 gray-btn" id="division">÷</button>
+                    <button class="button row-3 gray-btn operations" id="addition">+</button>
+                    <button class="button row-3 gray-btn operations" id="subtraction">-</button>
+                    <button class="button row-2 gray-btn operations" id="multiplication">×</button>
+                    <button class="button row-2 gray-btn operations" id="division">÷</button>
                     <button class="button gray-btn" id="equal">=</button>
                 </div>
             </div>
         </main>
+
+        <script src="script.js"></script>
     </body>
 </html>
+
